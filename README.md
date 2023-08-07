@@ -26,7 +26,7 @@ To install these dependencies, navigate to the project directory and run:
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 The application uses SQLite for the database and SQLAlchemy for the ORM. You can set up the database connection by updating the `SQLALCHEMY_DATABASE_URL` in `database.py`.
 
@@ -35,7 +35,7 @@ The application uses SQLite for the database and SQLAlchemy for the ORM. You can
 To run the application, use the command:
 ```bash
 uvicorn main:app --reload
-
+```
 
 API Endpoints
 'GET /word/{word_id}: Returns the details of a word, given its ID.
@@ -49,3 +49,4 @@ To copy this repository, use the following Git command:
 
 ```bash
 git clone https://github.com/edErikson/MultiTranslateAPI.git
+```
