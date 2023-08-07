@@ -33,7 +33,7 @@ The application uses SQLite for the database and SQLAlchemy for the ORM. You can
 ## Running the App
 
 To run the application, use the command:
-
+```bash
 uvicorn main:app --reload
 
 
@@ -48,4 +48,4 @@ API Endpoints
 To copy this repository, use the following Git command:
 
 ```bash
-git clone https://github.com/yourusername/MultiTranslateAPI.git
+git clone https://github.com/edErikson/MultiTranslateAPI.git
