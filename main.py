@@ -51,7 +51,7 @@ class TranslationOut(BaseModel):
         orm_mode = True
 
 
-@app.get("/word/{word_id}")
+@app.get("/word/{word_id}", tags=['English words'])
 def read_word(word_id: int, db: Session = Depends(get_db)):
     #db_word = db.query(models.Word).filter(models.Word.id == word_id).first()
     db_word = db.query(models.Word).options(joinedload(models.Word.category)).filter(models.Word.id == word_id).first()
@@ -96,7 +96,7 @@ def read_category_words(category_id: int, db: Session = Depends(get_db)):
     return words
 
 
-@app.get("/word/{word}/translations", response_model=List[TranslationOut])
+@app.get("/word/{word}/translations", response_model=List[TranslationOut], tags=['Translations'])
 def get_translations(word: str, db: Session = Depends(get_db)):
     db_word = db.query(models.Word).options(joinedload(models.Word.translations)).filter(models.Word.word == word).first()
     if db_word is None:
