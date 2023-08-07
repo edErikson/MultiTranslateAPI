@@ -37,11 +37,14 @@ To run the application, use the command:
 uvicorn main:app --reload
 ```
 
-API Endpoints
-'GET /word/{word_id}: Returns the details of a word, given its ID.
-'GET /word/{word}/translations: Returns all translations of a specific English word.
-'GET /category/{category_id}/words: Returns all words from a specific category, given its ID.
-'GET /translation/{translation_id}: Returns the details of a translation, given its ID.
+## API Endpoints
+
+| HTTP Method | Endpoint | Description |
+|-------------|----------|-------------|
+| GET | `/word/{word_id}` | Returns the details of a word, given its ID. |
+| GET | `/word/{word}/translations` | Returns all translations of a specific English word. |
+| GET | `/category/{category_id}/words` | Returns all words from a specific category, given its ID. |
+| GET | `/translation/{translation_id}` | Returns the details of a translation, given its ID. |
 
 ## Clone the Repository
 
