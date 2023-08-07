@@ -38,7 +38,14 @@ uvicorn main:app --reload
 
 
 API Endpoints
-GET /word/{word_id}: Returns the details of a word, given its ID.
-GET /word/{word}/translations: Returns all translations of a specific English word.
-GET /category/{category_id}/words: Returns all words from a specific category, given its ID.
-GET /translation/{translation_id}: Returns the details of a translation, given its ID.
+'GET /word/{word_id}: Returns the details of a word, given its ID.
+'GET /word/{word}/translations: Returns all translations of a specific English word.
+'GET /category/{category_id}/words: Returns all words from a specific category, given its ID.
+'GET /translation/{translation_id}: Returns the details of a translation, given its ID.
+
+## Clone the Repository
+
+To copy this repository, use the following Git command:
+
+```bash
+git clone https://github.com/yourusername/MultiTranslateAPI.git
