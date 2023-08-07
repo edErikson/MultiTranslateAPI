@@ -24,7 +24,7 @@ This project uses the following dependencies:
 
 To install these dependencies, navigate to the project directory and run:
 
-
+```bash
 pip install -r requirements.txt
 
 
@@ -38,7 +38,6 @@ uvicorn main:app --reload
 
 
 API Endpoints
-
 GET /word/{word_id}: Returns the details of a word, given its ID.
 GET /word/{word}/translations: Returns all translations of a specific English word.
 GET /category/{category_id}/words: Returns all words from a specific category, given its ID.
